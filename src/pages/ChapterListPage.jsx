@@ -9,7 +9,7 @@ const ChapterListPage = ({ id, episodeId }) => {
   const history = useHistory();
 
   return (
-    <div className='container '>
+    <div className='container chapter-list-page'>
       <div className="row">
         <PodCastDescription chaptersList={chaptersList} detail={detail} history={history} id={id} />
         <ChapterDetail chapter={chaptersList.results?.find(it => it.trackId === parseInt(episodeId))} />
