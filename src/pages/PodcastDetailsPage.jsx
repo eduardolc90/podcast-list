@@ -7,9 +7,8 @@ import { usePodCastsHook } from '../hooks/usePodCastsHook';
 const PodcastDetailsPage = ({ id }) => {
   const { chaptersList, detail } = usePodCastsHook(id);
   const history = useHistory();
-
   return (
-    <div className='container '>
+    <div className='container podcast-details-Page'>
       <div className="row">
         <PodCastDescription chaptersList={chaptersList} detail={detail} history={history} id={id} />
         <PodCastChaptersList chaptersList={chaptersList} id={id} history={history} />
